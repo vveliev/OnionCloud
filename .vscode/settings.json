@@ -1,0 +1,10 @@
+{
+    "esbonio.sphinx.confDir": "",
+    "editor.wordWrap": "on",
+    "editor.wrappingColumn": 80,
+    "rst.wrap_length": 80,
+    "rst.wrap_paragraphs": true,
+    "cSpell.words": [
+        "viewcode"
+    ],
+}
