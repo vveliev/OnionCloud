@@ -1,0 +1,19 @@
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/c4-plantuml/main/c4.puml
+
+@startuml
+!define DATABASE_ICON database
+!define SPRITESURL https://raw.githubusercontent.com/plantuml-stdlib/c4-plantuml/main/sprites/
+
+!includeurl SPRITESURL/c4.puml
+
+actor User
+
+C4_Container(external_web, "External Web", "Handles external web traffic", "AWS") {
+    C4_Container(web_app, "Web App", "Renders pages", "Node.js") {
+        C4_Component(web_app_db, "Web App DB", "Stores user data", DATABASE_ICON)
+    }
+    C4_Container(web_api, "Web API", "Provides a JSON API", "Python") {
+        C4_Component(web_api_db, "Web API DB", "Stores user data", DATABASE_ICON)
+    }
+}
+@enduml

@@ -1,0 +1,30 @@
+@startuml
+
+!define AWS_ICON https://raw.githubusercontent.com/mk-j/plantuml-icon-font-sprites/main/src/aws
+!define GCP_ICON https://raw.githubusercontent.com/mk-j/plantuml-icon-font-sprites/main/src/gcp
+!define AZURE_ICON https://raw.githubusercontent.com/mk-j/plantuml-icon-font-sprites/main/src/azure
+!define VAULT_ICON https://raw.githubusercontent.com/mk-j/plantuml-icon-font-sprites/main/src/vault
+!define GITLAB_ICON https://raw.githubusercontent.com/mk-j/plantuml-icon-font-sprites/main/src/gitlab
+!define TERRAFORM_ICON https://raw.githubusercontent.com/mk-j/plantuml-icon-font-sprites/main/src/terraform
+!define CD_ICON https://raw.githubusercontent.com/mk-j/plantuml-icon-font-sprites/main/src/cd
+!define MONITORING_ICON https://raw.githubusercontent.com/mk-j/plantuml-icon-font-sprites/main/src/monitoring
+
+actor Developer
+
+Developer -> (AWS)
+Developer -> (GCP)
+Developer -> (AZURE)
+
+(AWS) -down-> (Vault)
+(GCP) -down-> (Vault)
+(AZURE) -down-> (Vault)
+
+(Vault) -down-> (GitLab)
+(GitLab) -down-> (Terraform)
+(Terraform) -down-> (CI/CD)
+(CI/CD) -down-> (AWS)
+(CI/CD) -down-> (GCP)
+(CI/CD) -down-> (AZURE)
+(CI/CD) -down-> (Monitoring)
+
+@enduml

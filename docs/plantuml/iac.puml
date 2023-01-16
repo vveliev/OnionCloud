@@ -1,0 +1,22 @@
+@startuml
+
+
+!define IAC_TERRAFORM_URL https://raw.githubusercontent.com/plantuml-stdlib/IAC-PlantUML/master/terraform.puml
+!define IAC_SALTSTACK_URL https://raw.githubusercontent.com/plantuml-stdlib/IAC-PlantUML/master/saltstack.puml
+
+!includeurl IAC_TERRAFORM_URL
+!includeurl IAC_SALTSTACK_URL
+
+actor Developer
+
+Developer -> (IAC) : Write Infrastructure Code
+(IAC) -> (GitHub) : Commit Changes
+(GitHub) -> (CI) : Build and Test
+(CI) -> (GitHub) : Update Status
+
+Developer -> (IAC) : Write Configuration Code
+(IAC) -> (GitHub) : Commit Changes
+(GitHub) -> (CI) : Build and Test
+(CI) -> (GitHub) : Update Status
+
+@enduml

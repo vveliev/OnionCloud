@@ -1,0 +1,10 @@
+@startuml
+
+!define GITHUB_ICON https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/github/github.png
+!define TERRAFORM_ICON https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ9jz2x_QvbZ-IW8Y1_EaR-wj5vGp5W5I5b3A&usqp=CAU
+!define SALTSTACK_ICON https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ6L-ZSjS7sUjg6UvzVU4X9F_o-YehvIg&usqp=CAU
+
+actor "Developers"
+
+!define GITHUB_ICON https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/github/github.png
+!define TERRAFORM_ICON https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ9
