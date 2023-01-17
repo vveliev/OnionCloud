@@ -25,7 +25,7 @@ In the event of a disaster, the following procedures will be followed:
 4. Lessons Learned: The incident response team will document the disaster and any lessons learned for future reference.
 
 Availability
------------
+------------
 Our design includes multiple data centers in different regions to ensure high availability of services. In addition, we use a combination of load balancers, redundancy and self-healing mechanisms to ensure that our services remain available even in the event of a failure.
 
 SOC 2 Compliance
