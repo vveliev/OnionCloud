@@ -38,7 +38,7 @@ Incident response and disaster recovery
    business-continuity-planning.rst
 
 Security monitoring and logging
-------------------------------
+-------------------------------
 
 .. toctree::
    :maxdepth: 2
